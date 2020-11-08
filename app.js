@@ -40,3 +40,5 @@ app.listen(settings.port, error => {
     if(error) return console.error();
     console.log(`App listening on ${settings.port}`);
 });
+
+require('./batch').init();
